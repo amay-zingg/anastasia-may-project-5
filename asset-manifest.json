@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/anastasia-may-project-5/static/css/main.9ec46685.chunk.css",
+    "main.js": "/anastasia-may-project-5/static/js/main.ecddc36e.chunk.js",
+    "main.js.map": "/anastasia-may-project-5/static/js/main.ecddc36e.chunk.js.map",
+    "runtime-main.js": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js",
+    "runtime-main.js.map": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js.map",
+    "static/js/2.e1a1a17e.chunk.js": "/anastasia-may-project-5/static/js/2.e1a1a17e.chunk.js",
+    "static/js/2.e1a1a17e.chunk.js.map": "/anastasia-may-project-5/static/js/2.e1a1a17e.chunk.js.map",
+    "index.html": "/anastasia-may-project-5/index.html",
+    "precache-manifest.8911a6e28ac2fc6b52d0949f9fce5c6c.js": "/anastasia-may-project-5/precache-manifest.8911a6e28ac2fc6b52d0949f9fce5c6c.js",
+    "service-worker.js": "/anastasia-may-project-5/service-worker.js",
+    "static/css/main.9ec46685.chunk.css.map": "/anastasia-may-project-5/static/css/main.9ec46685.chunk.css.map",
+    "static/js/2.e1a1a17e.chunk.js.LICENSE.txt": "/anastasia-may-project-5/static/js/2.e1a1a17e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f907dda.js",
+    "static/js/2.e1a1a17e.chunk.js",
+    "static/css/main.9ec46685.chunk.css",
+    "static/js/main.ecddc36e.chunk.js"
+  ]
+}
