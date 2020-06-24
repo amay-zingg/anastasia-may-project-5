@@ -1,0 +1,57 @@
+main.mainContent{
+    height: 80vh;
+    position: relative;
+}
+
+.infoWindow{
+    width: 100vw;
+    height: 45vh;
+    position: absolute;
+    z-index: 10;
+    background: $primary;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.locationImage, .locationInfo{
+    padding: 2%;
+    width: 50%;
+}
+
+.locationImage img{
+    margin: 0 auto;
+    box-shadow: 4px 5px 5px -2px red;
+    border-radius: 5px;
+}
+
+p.lastUpdate{
+    font-style: italic;
+    font-family: 'arial';
+    @include fontSize(1.5rem);
+    line-height: 1.5rem;
+    color: $fontSecondary;
+    padding-top: 4%;
+    margin: 0;
+}
+
+.locationInfo{
+    @include fontSize(2rem);
+}
+
+h3{
+    @include fontSize(2.5rem);
+}
+
+p.artistSocial a{
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    @include fontSize(4rem);
+
+    :hover, :active{
+        color: red;
+        text-shadow: 2px 2px 4px $fontSecondary;
+    }
+}

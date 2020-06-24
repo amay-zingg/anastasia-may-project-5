@@ -1,0 +1,61 @@
+header {
+	background: $primary;
+	height: 10vh;
+	border-bottom: 2px solid #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1,
+h2,
+h3,
+.locationInfo,
+footer {
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1 {
+	width: 40%;
+	@include fontSize(2.5rem);
+	padding: 15px;
+}
+
+/* * * * WEATHER * * * */
+.weather {
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	justify-content: flex-end;
+}
+
+.description,
+.temp,
+.location {
+	@include fontSize(2rem);
+	text-transform: uppercase;
+	padding: 1%;
+	margin: 2%;
+	display: flex;
+	align-items: center;
+}
+
+.description {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 72%;
+}
+
+.description img {
+	height: 35%;
+	margin: 2%;
+	// * * * * IN CASE PHOTO LINK DOESNT WORK
+	font-size: 12px;
+    line-height: 12px;
+    font-family: 'arial';
+    text-transform: capitalize;
+}
