@@ -5,8 +5,6 @@ import Favicon from 'react-favicon';
 import Weather from './Weather/index';
 import MapContainer from './Map/index';
 // import firebase from './Firebase/index';
-// import Axios from 'axios';
-// % PUBLIC_URL %
 
 ReactDOM.render(
 	<div>
@@ -16,13 +14,12 @@ ReactDOM.render(
 );
 
 // * * * * The api call for the weather
-const API_key_weather = '1ab6b9b8515ef10ef6711d52af44a94b';
+const weatherAPI = '1ab6b9b8515ef10ef6711d52af44a94b';
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			// artData: []
 		};
 		this.getWeather();
 		this.weatherIcon = {
@@ -32,8 +29,6 @@ class App extends Component {
 			Clouds: './icons/partlyCloudy.png',
 			Clouds2: './icons/cloudy.png',
 			Clear: './icons/sunny.png'
-			// night: '/assets/icons/moon.png'
-			//didnt add drizzle or atmosphere https://openweathermap.org/weather-conditions
 		};
 	}
 
@@ -64,7 +59,7 @@ class App extends Component {
 
 	getWeather = async () => {
 		const callWeather = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${API_key_weather}`
+			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${weatherAPI}`
 		);
 
 		const response = await callWeather.json();
@@ -96,25 +91,6 @@ class App extends Component {
 						<MapContainer />
 					</div>
 				</main>
-
-				{/* <div className="infoWindow">
-						<div className="locationImage">
-							<img src="./images/KensingtonCarAndWallArt.jpg" alt="Placeholder"/>
-							<p className="lastUpdate">Image Last Updated</p>
-						</div>
-						<div className="locationInfo">
-							<h3>Image Title</h3>
-							<p>Location Here</p>
-							<p>Artist Name Here</p>
-							<p className="artistSocial">
-                    			<a href="#socialLinkHere">
-                    			<i className="fab fa-instagram"></i>
-                              	<span class="visuallyhidden">Instagram (opens a new window)</span>
-								<span class="handle">INSTAGRAM ACCOUNT</span>
-								</a>
-							</p>
-						</div>
-					</div> */}
 
 				<footer className="appFooter">
 					<p>

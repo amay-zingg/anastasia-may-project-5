@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, InfoWindow, GoogleApiWrapper } from 'google-maps-react';
 import firebase from '../Firebase/index';
 
 export class MapContainer extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
-			markers: []
-		};
+      markers: [], 
+      selectedMarker: null,
+      isOpen: false,
+    };
 	}
 
 	componentDidMount() {
@@ -21,215 +23,120 @@ export class MapContainer extends Component {
           id: key,
 					artPiece: data[key]
         });
-			}
+      }
 
-      console.log(markersList);
-      
 			this.setState({
-				markers: markersList
-			});
-		});
-	}
+        markers: markersList
+      });
 
-	// this.setState({
-	//   id: markersList,
-	//   artist: markersList[markers].artist,
-	//   artistSocial: markersList[markers].artistSocial,
-	//   image: markersList[markers].image,
-	//   imageAlt: markersList[markers].imageAlt,
-	//   imageDate: markersList[markers].imageDate,
-	//   lat: markersList[markers].lat,
-	//   lng: markersList[markers].lng,
-	//   location: markersList[markers].location,
-	//   title: markersList[markers].title
-	// });
-	//     console.log(markersList);
+      console.log(this.state.markers,`this.state.markers`);
+    });
+    
+  }; // * * * * END OF COMPONENT DID MOUNT
 
-	// * * * * INFO WINDOW
+  // handleClick = (marker, event) => {
+  //     // console.log(marker, `I was clicked`);
+  //     this.setState({ selectedMarker: marker})
+  //   }
+
+  handleToggleOpen = () => {
+      this.setState({
+          isOpen: true
+      });
+      console.log("click town");
+  }
+
+  handleToggleClose = () => {
+      this.setState({
+          isOpen: false
+      });
+  }
 
 	render() {
+    const style = {
+      position: 'relative',
+      width: '100%',
+      height: '100%'
+    };
+    
 		return (
-      <Map google={this.props.google} 
-      zoom={16.5} style={style} 
-      initialCenter={{ lat: 43.6545, lng: -79.4015 }}>
+      <Map  google={this.props.google} 
+            zoom={16.5} 
+            style={style} 
+            initialCenter={{ lat: 43.6545, lng: -79.4015 }}>
 				
-        {/* {this.state.markers.map((title, id) => {
-          })};  */}
+       {this.state.markers.map((marker) => {
+          return (
           <Marker
-					onClick={this.onMarkerClick}
-					icon={{
-						url: './icons/spraypaint.png'
-					}}
-          name={'Current location'}
-          // title={markers.title}
-          // id={markers.id}
-				/>
+              key={marker.artPiece.id}
+              icon={{
+                    url: './icons/spraypaint.png'
+                  }}
+              position={{ 
+                lat: marker.artPiece.lat, 
+                lng: marker.artPiece.lng 
+              }}
+              onClick={() => this.handleToggleOpen()} 
+          >
+            { this.state.isOpen &&
+              <InfoWindow>
+                <div>
+                  <p>Hello</p>
+                </div>
+              </InfoWindow>}
         
-        {/* END OF MARKERS */}
-
-			</Map>
-		);
-	}
-}
-
-const style = {
-	position: 'relative',
-	width: '100%',
-	height: '100%'
-};
+          </Marker> 
+           ) 
+          {/* // END OF MARKER RETURN */}
+        })} 
+        {/* // END OF RETURN FOR MAP() */}
+    </Map> 
+    ); // END OF ENTIRE RETURN
+  }; // END OF ENTIRE RENDER
+  }; // END OF CLASS COMPONENT
 
 export default GoogleApiWrapper({
 	apiKey: 'AIzaSyAP312VeMpu7VGjijjL1XopDWWIL46vl7I'
 })(MapContainer);
 
-// * * * * CODE FROM OTHER PROJECT
+          /* {selectedMarker && (
+              <InfoWindow 
+              position = {{
+                lat: selectedMarker.artPiece.lat, 
+                lng: selectedMarker.artPiece.lng 
+              }}
+              onCloseClick ={() => {
+                setSelectedMarker(null);
+              }}
+              > */
+            //     {/* I WANT THIS WINDOW TO OPEN IF THE SELECTED MARKER IS CLICKED */}
+            //     {/* I WANT THIS TO BE CLOSED IF ANOTHER MARKER IS SELECTED */}
+            //     {/* IF ARTISTSOCIAL = "N/A" THEN DONT SHOW P.ARTISTSOCIAL */}
+            //     {/* IF ITEM TITLE = "KENSINGTON BIKE RACK" SHOW BIKE ICON NOT SPRAY PAINT CAN */}
+            //     {/* <InfoWindow>
+            //           <div className="infoWindow">
+            //           <div className="locationImage">
+            //             <img src="./images/KensingtonCarAndWallArt.jpg" alt="Placeholder"/>
+            //             <p className="lastUpdate">Image Last Updated</p>
+            //           </div>
+            //           <div className="locationInfo">
+            //             <h3>Image Title</h3>
+            //             <p>Location Here</p>
+            //             <p>Artist Name Here</p>
+            //             <p className="artistSocial">
+            //                         <a href="#socialLinkHere">
+            //                         <i className="fab fa-instagram"></i>
+            //                               <span class="visuallyhidden">Instagram (opens a new window)</span>
+            //               <span class="handle">INSTAGRAM ACCOUNT</span>
+            //               </a>
+            //             </p>
+            //           </div>
+            //         </div>
+            //     </InfoWindow> */}
+            //   {/* </InfoWindow>
+            //   )}; */}
+            // {/* </Marker> */}
+         
 
-// // LOOP THROUGH MARKERS
-// for(var i = 0;i < markers.length;i++){
-// addMarker(markers[i]);
 
-// };
-
-// // ADD MARKER FUNCTION
-// function addMarker(props){
-// var marker = new google.maps.Marker({
-//     position:props.coords,
-//     map: map
-// });
-
-// // CHECK FOR CUSTOM ICON
-// if(props.iconImage){
-//     // SET ICON IMAGE
-//     marker.setIcon(props.iconImage);
-// }
-
-// // CHECK FOR CUSTOM CONTENT
-// if(props.content){
-//     var infoWindow = new google.maps.InfoWindow({
-//     content: props.content
-//     });
-
-//     marker.addListener('click', function(){
-//     infoWindow.open(map, marker);
-//     });
-
-// * * * * ATTEMPTS TO MAKE ARRAY
-
-// 		for (let i = 0; i < keys.length; i++ ) {
-// 			let k = keys[i];
-// 			let lng = markers[k].lng;
-// 			let lat = markers[k].lat;
-// 			let markerData = markers[k].markerData;
-
-// 			console.log(lng, lat);
-
-//     };
-
-// dbRef.on('value', (snapshot) => {
-//   var finished = []
-//   snapshot.forEach((data) => {
-//     const markers = data.val();
-//     markers['key'] = data.key;
-//     finished.push(markers);
-//   })
-//     this.setState({
-//       markersList: finished
-//     })
-
-//   // console.log(markersList);
-
-// markerList.on('value', gotData, errData);
-
-// 	function gotData(data) {
-// 		let markers = data.val();
-// 		let keys = Object.keys(markers);
-
-// 		console.log(keys);
-// 		for (let i = 0; i < keys.length; i++ ) {
-// 			let k = keys[i];
-// 			let lng = markers[k].lng;
-// 			let lat = markers[k].lat;
-// 			let markerData = markers[k].markerData;
-
-// 			console.log(lng, lat);
-// 		}
-// 	}
-
-// 	function errData(err) {
-// 		console.log('Error!');
-// 		console.log(err);
-// 	}
-// }
-
-// let markersList = [];
-// for (let marker in markers) {
-//   markersList.push({
-//     id: marker,
-//     artist: markers[marker].artist,
-//     artistSocial: markers[marker].artistSocial,
-//     image: markers[marker].image,
-//     imageAlt: markers[marker].imageAlt,
-//     imageDate: markers[marker].imageDate,
-//     lat: markers[marker].lat,
-//     lng: markers[marker].lng,
-//     location: markers[marker].location,
-//     title: markers[marker].title
-//   });
-//   console.log(markersList);
-// }
-// this.setState({
-//   markers: markersList
-// });
-
-// componentDidMount() {
-// 	const database = firebase.database();
-// 	const markerList = database.ref('markers');
-// 	markerList.on('value', gotData, errData);
-
-// 	function gotData(data) {
-// 		let markers = data.val();
-// 		let keys = Object.keys(markers);
-
-// 		console.log(keys);
-// 		for (let i = 0; i < keys.length; i++ ) {
-// 			let k = keys[i];
-// 			let lng = markers[k].lng;
-// 			let lat = markers[k].lat;
-// 			let markerData = markers[k].markerData;
-
-// 			console.log(lng, lat);
-// 		}
-// 	}
-
-// 	function errData(err) {
-// 		console.log('Error!');
-// 		console.log(err);
-// 	}
-// }
-
-// locations = async () => {
-//   const callFirebase = await fetch(
-//     firebase.database().ref('markers')
-//   );
-
-//   const markersList = await fetch(callFirebase.on('value', (snapshot) => {
-//     const markers = snapshot.val();
-
-//     console.log(markers);
-
-//     this.setState({
-//       id: markersList,
-//       artist: markersList[markers].artist,
-//       artistSocial: markersList[markers].artistSocial,
-//       image: markersList[markers].image,
-//       imageAlt: markersList[markers].imageAlt,
-//       imageDate: markersList[markers].imageDate,
-//       lat: markersList[markers].lat,
-//       lng: markersList[markers].lng,
-//       location: markersList[markers].location,
-//       title: markersList[markers].title
-//     });
-//         console.log(markersList);
-//     })
-//   );
-// }
+ 
