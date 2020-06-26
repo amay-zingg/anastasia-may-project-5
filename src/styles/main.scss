@@ -1,57 +1,71 @@
-main.mainContent{
-    height: 80vh;
-    position: relative;
+main.mainContent {
+	height: 80vh;
+	position: relative;
 }
 
-.infoWindow{
-    width: 100vw;
-    height: 45vh;
-    position: absolute;
-    z-index: 10;
-    background: $primary;
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+.infoWindow {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	color: $primary;
+	background: #fff;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
 }
 
-.locationImage, .locationInfo{
-    padding: 2%;
-    width: 50%;
+.locationImage,
+.locationInfo {
+	padding: 2%;
+	width: 50%;
 }
 
-.locationImage img{
-    margin: 0 auto;
-    box-shadow: 4px 5px 5px -2px red;
-    border-radius: 5px;
+.locationImage img {
+	width: 98%;
+	margin: 0 auto;
+	box-shadow: 4px 5px 5px -2px #000;
+	border-radius: 5px;
 }
 
-p.lastUpdate{
-    font-style: italic;
-    font-family: 'arial';
-    @include fontSize(1.5rem);
-    line-height: 1.5rem;
-    color: $fontSecondary;
-    padding-top: 4%;
-    margin: 0;
+p.lastUpdate {
+	font-style: italic;
+	font-family: 'arial';
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	color: $fontSecondary;
+	padding-top: 4%;
+	margin: 0;
 }
 
-.locationInfo{
-    @include fontSize(2rem);
+.locationInfo {
+	font-size: 2rem;
 }
 
-h3{
-    @include fontSize(2.5rem);
+h3 {
+	font-size: 2.5rem;
 }
 
-p.artistSocial a{
-    color: white;
-    text-shadow: 2px 2px 2px red;
-    @include fontSize(4rem);
+.locationInfo p {
+	margin: 1%;
+}
 
-    :hover, :active{
-        color: red;
-        text-shadow: 2px 2px 4px $fontSecondary;
-    }
+.location p.artist {
+	margin-top: 2%;
+}
+
+p.artistSocial a {
+	color: $primary;
+	text-shadow: 2px 2px 2px $fontSecondary;
+	font-size: 3rem;
+
+	@media (hover: hover) and (pointer: fine) {
+		:hover,
+		:active {
+			color: #000;
+			text-shadow: 2px 2px 4px $primary;
+		}
+	}
 }

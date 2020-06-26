@@ -1,60 +1,66 @@
-@media only screen and (max-width: 600px){
-    header{
-        height: 15vh;
-        flex-flow: column;
-        align-content: center;
-    }
+@media only screen and (max-width: 650px) {
+	header {
+		height: 15vh;
+		flex-flow: column;
+		align-content: center;
+	}
 
-    h1{
-        width: 100%;
-        font-size: 2rem;
-        line-height: 1rem;
-        padding: 2%;
-        // margin: 3% 1% 1% 3%;
-    }
+	h1 {
+		width: 100%;
+		line-height: 1rem;
+		padding: 2%;
+		text-align: center;
+		margin: 2%;
+	}
 
-    .description, .temp, .location{
-        font-size: 1.5rem;
-        height: 5vh;
-        margin: 0;
-        justify-content: space-around;
-    }
+	.description,
+	.temp,
+	.location {
+		height: 6vh;
+		margin: 0;
+		justify-content: space-around;
+	}
 
-    .weather{
-        width: 100%;
-        position: relative;
-        z-index: 10;
-    }
+	.weather {
+		width: 100%;
+		position: relative;
+		z-index: 10;
+	}
 
-    .weather img{
-        height: 150%;
-    }
+	.weather img {
+		height: 130%;
+	}
 
-    .description{
-        width: 50%;
-    }
+	.description {
+		width: 50%;
+	}
 
-    .temp, .location{
-        width: 25%;
-    }
+	.temp,
+	.location {
+		width: 25%;
+	}
 
-    footer{
-        height: 5vh;
-        font-size: 1rem;
-        line-height: 0;
-    }
+	.infoWindow {
+		flex-direction: column;
+	}
+
+	.locationImage,
+	.locationInfo {
+		width: 100%;
+	}
+
+	.locationImage img {
+		width: 80%;
+	}
+
+	footer {
+		height: 5vh;
+		line-height: 0;
+	}
 }
 
-@media only screen and (max-width: 500px){
-    h1{
-        padding: 3%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    h1{
-        text-align: center;
-        margin: 0;
-        padding: 5%;
-    }
+@media only screen and (max-width: 500px) {
+	h1 {
+		padding: 3%;
+	}
 }

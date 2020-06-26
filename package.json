@@ -14,7 +14,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-favicon": "0.0.18",
-    "react-scripts": "3.4.1"
+    "react-google-maps": "^9.4.5",
+    "react-scripts": "3.4.1",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "predeploy": "npm run build",
