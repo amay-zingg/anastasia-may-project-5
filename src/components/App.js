@@ -4,7 +4,12 @@ import ReactDOM from 'react-dom';
 import Favicon from 'react-favicon';
 import Weather from './Weather/index';
 import MapContainer from './Map/index';
-// import firebase from './Firebase/index';
+import thunderstorm from '../icons/thunderstorm.png';
+import rainy from '../icons/rainy.png';
+import snow from '../icons/snow.png';
+import pcloudy from '../icons/partlyCloudy.png';
+import cloudy from '../icons/cloudy.png';
+import clear from '../icons/sunny.png';
 
 ReactDOM.render(
 	<div>
@@ -13,22 +18,20 @@ ReactDOM.render(
 	document.getElementById('root')
 );
 
-// * * * * The api call for the weather
 const weatherAPI = '1ab6b9b8515ef10ef6711d52af44a94b';
 
 class App extends Component {
 	constructor() {
 		super();
-		this.state = {
-		};
+		this.state = {};
 		this.getWeather();
 		this.weatherIcon = {
-			Thunderstorm: './icons/thunderstorm.png',
-			Rain: './icons/rainy.png',
-			Snow: './icons/snow.png',
-			Clouds: './icons/partlyCloudy.png',
-			Clouds2: './icons/cloudy.png',
-			Clear: './icons/sunny.png'
+			Thunderstorm: thunderstorm,
+			Rain: rainy,
+			Snow: snow,
+			Clouds: pcloudy,
+			Clouds2: cloudy,
+			Clear: clear
 		};
 	}
 
@@ -76,7 +79,7 @@ class App extends Component {
 	render() {
 		return (
 			<Fragment>
-				<header className="appHeader">
+				<header className="Header">
 					<h1>Kensington Art Tour</h1>
 					<Weather
 						weatherIcon={this.state.icon}
