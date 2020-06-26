@@ -79,7 +79,7 @@ class App extends Component {
 	render() {
 		return (
 			<Fragment>
-				<header className="appHeader">
+				<header className="Header">
 					<h1>Kensington Art Tour</h1>
 					<Weather
 						weatherIcon={this.state.icon}
