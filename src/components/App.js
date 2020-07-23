@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import '../App.scss';
-import ReactDOM from 'react-dom';
-import Favicon from 'react-favicon';
+// import ReactDOM from 'react-dom';
+// import Favicon from 'react-favicon';
 import Weather from './Weather/index';
 import MapContainer from './Map/index';
 import thunderstorm from '../icons/thunderstorm.png';
@@ -11,14 +11,12 @@ import pcloudy from '../icons/partlyCloudy.png';
 import cloudy from '../icons/cloudy.png';
 import clear from '../icons/sunny.png';
 
-ReactDOM.render(
-	<div>
-		<Favicon url="favicon.ico" />
-	</div>,
-	document.getElementById('root')
-);
-
-const weatherAPI = '1ab6b9b8515ef10ef6711d52af44a94b';
+// ReactDOM.render(
+// 	<div>
+// 		<Favicon url="favicon.ico" />
+// 	</div>,
+// 	document.getElementById('root')
+// );
 
 class App extends Component {
 	constructor() {
@@ -62,10 +60,8 @@ class App extends Component {
 
 	getWeather = async () => {
 		const callWeather = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${weatherAPI}`
+			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${process.env.REACT_APP_WEATHER_API}`
 		);
-
-		// {process.env.REACT_APP_WEATHER_API}
 
 		const response = await callWeather.json();
 
