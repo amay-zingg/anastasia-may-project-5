@@ -106,7 +106,7 @@ class MapContainer extends Component {
 				onClick={this.handleClick}
 				// googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process
 				// 	.env.REACT_APP_GOOGLE_API}`}
-				googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP312VeMpu7VGjijjL1XopDWWIL46vl7I&v=3.exp&libraries=geometry,drawing,places"
+				googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvMbblxC9cCa5RZ-eRFX3BoqySB-xi0cY&v=3.exp&libraries=geometry,drawing,places"
 				loadingElement={<div style={{ height: `100%` }} />}
 				containerElement={<div style={{ height: `80vh` }} />}
 				mapElement={<div style={{ height: `100%` }} />}
