@@ -65,6 +65,8 @@ class App extends Component {
 			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${weatherAPI}`
 		);
 
+		// {process.env.REACT_APP_WEATHER_API}
+
 		const response = await callWeather.json();
 
 		this.setState({
