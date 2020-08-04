@@ -8,23 +8,38 @@ header {
 }
 
 h1,
-h2,
-h3,
+p.weather,
 .locationInfo,
-footer {
+footer p {
 	font-family: 'Anton', sans-serif;
 	text-transform: uppercase;
 	margin: 0;
 }
 
-h1 {
+a.pageTitle{
 	width: 45%;
+}
+
+h1:not(*:root){
+	letter-spacing: 1px;
+}
+
+h1 {
 	font-size: clamp(3rem, 2.5vw, 2rem);
 	padding: 15px;
+	letter-spacing: 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h1:hover,
+h1:active {
+	text-shadow: 1px 1px 4px #000;
+	color: $secondary;
 }
 
 /* * * * WEATHER * * * */
-.weather {
+.weather-bar {
 	width: 55%;
 	display: flex;
 	justify-content: space-around;
@@ -32,9 +47,9 @@ h1 {
 	justify-content: flex-end;
 }
 
-.description,
-.temp,
-.location {
+p.description,
+p.temp,
+p.location {
 	font-size: clamp(1.5rem, 2.5vw, 2rem);
 	text-transform: uppercase;
 	padding: 1%;
@@ -43,17 +58,18 @@ h1 {
 	align-items: center;
 }
 
-.description {
+p.description {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: 72%;
+	min-width: 50%;
 }
 
-.description img {
-	height: 35%;
+p.weather img {
+	height: 50px;
+	width: 50px;
 	margin: 2%;
-	// * * * * IN CASE PHOTO LINK DOESNT WORK
+	// * * * * IN CASE PHOTO LINK DOESN'T WORK
 	font-size: 12px;
 	line-height: 12px;
 	font-family: 'arial';

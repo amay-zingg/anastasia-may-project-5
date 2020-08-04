@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../App.scss';
-// import ReactDOM from 'react-dom';
-// import Favicon from 'react-favicon';
+import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 import Weather from './Weather/index';
 import MapContainer from './Map/index';
 import thunderstorm from '../icons/thunderstorm.png';
@@ -10,13 +11,6 @@ import snow from '../icons/snow.png';
 import pcloudy from '../icons/partlyCloudy.png';
 import cloudy from '../icons/cloudy.png';
 import clear from '../icons/sunny.png';
-
-// ReactDOM.render(
-// 	<div>
-// 		<Favicon url="favicon.ico" />
-// 	</div>,
-// 	document.getElementById('root')
-// );
 
 class App extends Component {
 	constructor() {
@@ -76,9 +70,15 @@ class App extends Component {
 
 	render() {
 		return (
+			<Router>
 			<Fragment>
+
+				<Landing/>
+
 				<header className="Header">
-					<h1>Kensington Art Tour</h1>
+					<Link to="/" className="pageTitle" title="Go back to main map">
+						<h1>Kensington Art Tour</h1>
+					</Link>
 					<Weather
 						weatherIcon={this.state.icon}
 						description={this.state.description}
@@ -93,16 +93,9 @@ class App extends Component {
 					</div>
 				</main>
 
-				<footer className="appFooter">
-					<p>
-						<i className="far fa-copyright">
-							<span className="visuallyhidden">Copyright Symbol</span>
-						</i>{' '}
-						2020 Anastasia May <i className="fab fa-canadian-maple-leaf" />
-						<span className="visuallyhidden">Maple Leaf Icon</span> Explore Toronto
-					</p>
-				</footer>
+				<Footer />
 			</Fragment>
+			</Router>
 		);
 	}
 }

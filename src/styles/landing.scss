@@ -1,0 +1,72 @@
+.landing-overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(000, 0, 0, 0.7);
+    // background: rgba(255,255,255, 0.8);
+    z-index: 20;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing{
+    position: relative;
+    width: 600px; 
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: #FFF;
+    z-index: 30;
+    border-radius: 10px;
+    border: $secondary 2px solid;
+    width: 600px; 
+    height: 450px;
+    background: url(../images/KensingtonCarAndWallArt.jpg);
+    background-size: cover;
+}
+
+.title-photo{
+    width: 80%;
+    padding: 15px;
+}
+
+.intro{
+    width: 70%;
+    color: #FFF;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    // background: rgba(255,255,255, 0.5);
+    background: rgba(000, 0, 0, 0.8);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.intro p{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes shadow-pulse{
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+.enter-site{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 2rem;
+    margin: 20px 0;
+    background: $primary;
+    padding: 15px 30px;
+    border: #000 1px solid;
+    border-radius: 5px;
+    animation: shadow-pulse 1s infinite;
+}
