@@ -5,38 +5,37 @@
 		align-content: center;
 	}
 
-	h1 {
+	a.pageTitle{
 		width: 100%;
+	}
+
+	h1 {
 		line-height: 1rem;
 		padding: 2%;
 		text-align: center;
 		margin: 2%;
 	}
 
-	.description,
-	.temp,
-	.location {
-		height: 6vh;
-		margin: 0;
-		justify-content: space-around;
-	}
-
-	.weather {
+	.weather-bar {
 		width: 100%;
 		position: relative;
 		z-index: 10;
 	}
 
-	.weather img {
-		height: 130%;
+	p.description,
+	p.temp,
+	p.location {
+		height: 6vh;
+		margin: 0;
+		justify-content: space-around;
 	}
 
-	.description {
+	p.description {
 		width: 50%;
 	}
 
-	.temp,
-	.location {
+	p.temp,
+	p.location {
 		width: 25%;
 	}
 
@@ -56,6 +55,11 @@
 	footer {
 		height: 5vh;
 		line-height: 0;
+	}
+
+	.slideshow{
+		width: 100%;
+		bottom: 60vh;
 	}
 }
 

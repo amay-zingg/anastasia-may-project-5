@@ -1,9 +1,50 @@
 footer {
-	font-size: clamp(1rem, 2.5vw, 2rem);
 	background: $primary;
 	border-top: 2px solid #000;
 	height: 10vh;
+	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
+
+footer p{
+	font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+footer p a,
+.slideshow-link p,
+.credit-link p{
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+footer p a:hover,
+footer p a:active,
+.slideshow-link p:hover,
+.slideshow-link p:active,
+.credit-link p:hover,
+.credit-link p:active {
+	text-shadow: 1px 1px 1px #000;
+	color: $secondary;
+}
+
+.slideshow{
+	position: absolute;
+	background: $primary;
+	height: 90%;
+	// height: 500px;
+	bottom: 80vh;
+	width: 60%;
+	z-index: 20;
+}
+
+.credit{
+	position: absolute;
+	background: $primary;
+	bottom: 10vh;
+	right: 0;
+	z-index: 10;
+	padding: 2rem;
+}
+

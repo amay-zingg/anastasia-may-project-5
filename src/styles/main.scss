@@ -64,8 +64,8 @@ p.artistSocial a {
 	@media (hover: hover) and (pointer: fine) {
 		:hover,
 		:active {
-			color: #000;
-			text-shadow: 2px 2px 4px $primary;
+			text-shadow: 1px 1px 1px #000;
+			color: $secondary;
 		}
 	}
 }

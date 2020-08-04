@@ -2,20 +2,13 @@ import React from 'react';
 
 const Weather = (props) => {
 	return (
-		<div className="weather">
-			<h2 className="description">
-				<img
-					src={`${props.weatherIcon}`}
-					alt="Weather Icons Designer: Andi Nur Abdillah (https://www.iconfinder.com/andinur)"
-				/>
-				<p>{props.description}</p>
-			</h2>
-			<h2 className="temp">
-				<p>{props.temp}&deg;</p>
-			</h2>
-			<h2 className="location">
-				<p>{props.city}</p>
-			</h2>
+		<div className="weather-bar">
+			<p className="weather description">
+				<img src={`${props.weatherIcon}`} alt="Weather Icon" />
+				{props.description}
+			</p>
+			<p className="weather temp">{props.temp}&deg;</p>
+			<p className="weather location">{props.city}</p>
 		</div>
 	);
 };
