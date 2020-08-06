@@ -2,6 +2,12 @@
 	.image-gallery {
 		width: 90%;
 	}
+
+	.image-gallery-thumbnails .image-gallery-thumbnails-container {
+		white-space: normal;
+		overflow: scroll;
+		height: 150px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -80,5 +86,18 @@
 
 	.slideshow-wrapper {
 		padding: 15vh 2vw;
+	}
+
+	.image-gallery-thumbnails .image-gallery-thumbnails-container {
+		height: 250px;
+	}
+
+	.landing {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.title-photo {
+		width: 100%;
 	}
 }
