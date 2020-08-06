@@ -1,0 +1,39 @@
+.slideshow-wrapper {
+	height: 100%;
+	background: $primary;
+	padding: 2vh 2vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-gallery {
+	max-width: 780px;
+}
+
+.image-gallery-slide .image-gallery-image {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+	padding: 50px 0;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+	height: 40px;
+	width: 15px;
+}
+
+.image-gallery-fullscreen-button .image-gallery-svg,
+.image-gallery-play-button .image-gallery-svg {
+	height: 15px;
+	width: 15px;
+}
+
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+	padding: 0;
+}
