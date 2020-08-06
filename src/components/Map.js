@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose';
 import { withScriptjs, GoogleMap, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
-import firebase from '../Firebase/index';
-import sprayicon from '../../icons/spraypaint.png';
+import firebase from './Firebase.js';
+import sprayicon from '../icons/spraypaint.png';
 // * * * * MADE WITH FUNCTIONALITY HELP FROM THIS INCREDIBLE PERSON https://twitter.com/danditomaso * * * * //
 
 const MapWithAMarker = compose(withScriptjs, withGoogleMap)((props) => {

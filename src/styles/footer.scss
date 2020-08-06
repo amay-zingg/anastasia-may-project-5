@@ -8,14 +8,14 @@ footer {
 	justify-content: space-around;
 }
 
-footer p{
+footer p {
 	font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 footer p a,
 .slideshow-link p,
-.credit-link p{
-	color: #FFF;
+.credit-link p {
+	color: #fff;
 	text-shadow: 1px 1px 1px #000;
 }
 
@@ -29,17 +29,7 @@ footer p a:active,
 	color: $secondary;
 }
 
-.slideshow{
-	position: absolute;
-	background: $primary;
-	height: 90%;
-	// height: 500px;
-	bottom: 80vh;
-	width: 60%;
-	z-index: 20;
-}
-
-.credit{
+.credit {
 	position: absolute;
 	background: $primary;
 	bottom: 10vh;
@@ -47,4 +37,3 @@ footer p a:active,
 	z-index: 10;
 	padding: 2rem;
 }
-

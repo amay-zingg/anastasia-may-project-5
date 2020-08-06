@@ -16,11 +16,11 @@ footer p {
 	margin: 0;
 }
 
-a.pageTitle{
+a.pageTitle {
 	width: 45%;
 }
 
-h1:not(*:root){
+h1:not(*:root) {
 	letter-spacing: 1px;
 }
 
@@ -68,7 +68,7 @@ p.description {
 p.weather img {
 	height: 50px;
 	width: 50px;
-	margin: 2%;
+	margin: 5%;
 	// * * * * IN CASE PHOTO LINK DOESN'T WORK
 	font-size: 12px;
 	line-height: 12px;

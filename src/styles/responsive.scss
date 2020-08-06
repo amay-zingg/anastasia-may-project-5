@@ -1,3 +1,9 @@
+@media only screen and (max-width: 780px) {
+	.image-gallery {
+		width: 90%;
+	}
+}
+
 @media only screen and (max-width: 650px) {
 	header {
 		height: 15vh;
@@ -5,7 +11,7 @@
 		align-content: center;
 	}
 
-	a.pageTitle{
+	a.pageTitle {
 		width: 100%;
 	}
 
@@ -20,6 +26,11 @@
 		width: 100%;
 		position: relative;
 		z-index: 10;
+	}
+
+	p.weather img {
+		height: 40px;
+		width: 40px;
 	}
 
 	p.description,
@@ -57,14 +68,17 @@
 		line-height: 0;
 	}
 
-	.slideshow{
-		width: 100%;
-		bottom: 60vh;
+	.credit {
+		bottom: 5vh;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	h1 {
 		padding: 3%;
+	}
+
+	.slideshow-wrapper {
+		padding: 15vh 2vw;
 	}
 }
