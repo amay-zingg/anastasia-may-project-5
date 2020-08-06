@@ -19,6 +19,7 @@ function App() {
 				<Switch>
 					<main>
 						<Landing />
+						<Route path="/anastasia-may-project-5/" exact component={MapContainer} />
 						<Route path="/" exact component={MapContainer} />
 						<Route path="/slideshow" component={Slideshow} />
 					</main>
