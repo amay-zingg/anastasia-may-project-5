@@ -19,9 +19,9 @@ function App() {
 				<Switch>
 					<main>
 						<Route path="/anastasia-may-project-5" component={Landing} />
-						<Route path="/anastasia-may-project-5" exact component={MapContainer} />
-						<Route path="/slideshow" component={Slideshow} />
 						<MapContainer />
+						<Route path="/" exact component={MapContainer} />
+						<Route path="/slideshow" component={Slideshow} />
 					</main>
 				</Switch>
 				<Footer />
