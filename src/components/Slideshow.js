@@ -38,10 +38,6 @@ class Slideshow extends React.Component {
 				thumbnail: 'https://anastasiamay.ca/assets/KAT/thumb-grom.jpg'
 			},
 			{
-				original: 'https://anastasiamay.ca/assets/KAT/slide-hostel.jpg',
-				thumbnail: 'https://anastasiamay.ca/assets/KAT/thumb-hostel.jpg'
-			},
-			{
 				original: 'https://anastasiamay.ca/assets/KAT/slide-embassy.jpg',
 				thumbnail: 'https://anastasiamay.ca/assets/KAT/thumb-embassy.jpg'
 			},
@@ -68,6 +64,10 @@ class Slideshow extends React.Component {
 			{
 				original: 'https://anastasiamay.ca/assets/KAT/slide-afford.jpg',
 				thumbnail: 'https://anastasiamay.ca/assets/KAT/thumb-afford.jpg'
+			},
+			{
+				original: 'https://anastasiamay.ca/assets/KAT/slide-hostel.jpg',
+				thumbnail: 'https://anastasiamay.ca/assets/KAT/thumb-hostel.jpg'
 			}
 		];
 
