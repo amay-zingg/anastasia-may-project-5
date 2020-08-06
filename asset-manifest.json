@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/anastasia-may-project-5/static/css/main.b9e8a075.chunk.css",
-    "main.js": "/anastasia-may-project-5/static/js/main.a3a5f934.chunk.js",
-    "main.js.map": "/anastasia-may-project-5/static/js/main.a3a5f934.chunk.js.map",
+    "main.css": "/anastasia-may-project-5/static/css/main.8615cb17.chunk.css",
+    "main.js": "/anastasia-may-project-5/static/js/main.32d06903.chunk.js",
+    "main.js.map": "/anastasia-may-project-5/static/js/main.32d06903.chunk.js.map",
     "runtime-main.js": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js",
     "runtime-main.js.map": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js.map",
-    "static/js/2.0e10a982.chunk.js": "/anastasia-may-project-5/static/js/2.0e10a982.chunk.js",
-    "static/js/2.0e10a982.chunk.js.map": "/anastasia-may-project-5/static/js/2.0e10a982.chunk.js.map",
+    "static/js/2.0567e599.chunk.js": "/anastasia-may-project-5/static/js/2.0567e599.chunk.js",
+    "static/js/2.0567e599.chunk.js.map": "/anastasia-may-project-5/static/js/2.0567e599.chunk.js.map",
     "index.html": "/anastasia-may-project-5/index.html",
-    "precache-manifest.802283a38412d6259f83dc8c08ff8be5.js": "/anastasia-may-project-5/precache-manifest.802283a38412d6259f83dc8c08ff8be5.js",
+    "precache-manifest.17fab18b19e078fd874531360e1921af.js": "/anastasia-may-project-5/precache-manifest.17fab18b19e078fd874531360e1921af.js",
     "service-worker.js": "/anastasia-may-project-5/service-worker.js",
-    "static/css/main.b9e8a075.chunk.css.map": "/anastasia-may-project-5/static/css/main.b9e8a075.chunk.css.map",
-    "static/js/2.0e10a982.chunk.js.LICENSE.txt": "/anastasia-may-project-5/static/js/2.0e10a982.chunk.js.LICENSE.txt",
+    "static/css/main.8615cb17.chunk.css.map": "/anastasia-may-project-5/static/css/main.8615cb17.chunk.css.map",
+    "static/js/2.0567e599.chunk.js.LICENSE.txt": "/anastasia-may-project-5/static/js/2.0567e599.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/anastasia-may-project-5/static/media/KensingtonCarAndWallArt.c82a79d5.jpg",
     "static/media/KensingtonTitle.png": "/anastasia-may-project-5/static/media/KensingtonTitle.9abc2710.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8f907dda.js",
-    "static/js/2.0e10a982.chunk.js",
-    "static/css/main.b9e8a075.chunk.css",
-    "static/js/main.a3a5f934.chunk.js"
+    "static/js/2.0567e599.chunk.js",
+    "static/css/main.8615cb17.chunk.css",
+    "static/js/main.32d06903.chunk.js"
   ]
 }
