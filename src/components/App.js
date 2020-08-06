@@ -4,7 +4,6 @@ import Header from './Header.js';
 import MapContainer from './Map.js';
 import Footer from './Footer.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Slideshow from './Slideshow';
 import bikeRackDrawing from '../images/KensingtonTitle.png';
 
 function closeIntro() {
