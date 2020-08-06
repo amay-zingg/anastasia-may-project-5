@@ -2,9 +2,9 @@ import React from 'react';
 import '../App.scss';
 import Header from './Header.js';
 import MapContainer from './Map.js';
+import Slideshow from './Slideshow';
 import Footer from './Footer.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Slideshow from './Slideshow';
 import bikeRackDrawing from '../images/KensingtonTitle.png';
 
 function closeIntro() {
@@ -19,7 +19,7 @@ function App() {
 				<Switch>
 					<main>
 						<Route path="/" component={Landing} />
-						<Route path="/" exact component={MapContainer} />
+						<Route path="/anastasia-may-project-5" exact component={MapContainer} />
 						<Route path="/slideshow" component={Slideshow} />
 					</main>
 				</Switch>
