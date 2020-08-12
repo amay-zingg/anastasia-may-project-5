@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Weather from './Weather.js';
 import thunderstorm from '../icons/thunderstorm.png';
@@ -7,9 +7,6 @@ import snow from '../icons/snow.png';
 import pcloudy from '../icons/partlyCloudy.png';
 import cloudy from '../icons/cloudy.png';
 import clear from '../icons/sunny.png';
-
-// import Modal from './Modal';
-// import bikeRackDrawing from '../images/KensingtonTitle.png';
 
 class Header extends Component {
 	constructor() {
