@@ -77,6 +77,15 @@
 	.credit {
 		bottom: 5vh;
 	}
+
+	.landing {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.title-photo {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -90,14 +99,5 @@
 
 	.image-gallery-thumbnails .image-gallery-thumbnails-container {
 		height: 250px;
-	}
-
-	.landing {
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-
-	.title-photo {
-		width: 100%;
 	}
 }

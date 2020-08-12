@@ -13,7 +13,7 @@ footer p {
 }
 
 footer p a,
-.slideshow-link p,
+.info-slideshow p,
 .credit-link p {
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
@@ -21,12 +21,18 @@ footer p a,
 
 footer p a:hover,
 footer p a:active,
-.slideshow-link p:hover,
-.slideshow-link p:active,
+.info-slideshow a p:hover,
+.info-slideshow a p:active,
 .credit-link p:hover,
 .credit-link p:active {
 	text-shadow: 1px 1px 1px #000;
 	color: $secondary;
+}
+
+.info-slideshow{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .credit {

@@ -1,5 +1,8 @@
-.landing-overlay {
-	position: fixed;
+.info-overlay {
+	position: absolute;
+	top: -100vh;
+	left: 0;
+	right: 0;
 	height: 100%;
 	width: 100%;
 	background: rgba(000, 0, 0, 0.7);
@@ -10,9 +13,9 @@
 	justify-content: center;
 }
 
-.landing {
+.info {
 	position: relative;
-	margin: 10vh 0;
+	margin: 25vh 0;
 	width: 600px;
 	height: 450px;
 	display: flex;
@@ -45,6 +48,8 @@
 .intro p {
 	padding: 0;
 	margin: 0;
+	font-family: 'arial';
+	text-transform: initial;
 }
 
 @keyframes shadow-pulse {
