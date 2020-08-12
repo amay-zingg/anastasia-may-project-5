@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f354fe94207eb25ce78ebf8c12cb30fa",
+    "revision": "b7d656416911f70605115652e59fd321",
     "url": "/anastasia-may-project-5/index.html"
   },
   {
-    "revision": "89b8842f83563f1e7edc",
-    "url": "/anastasia-may-project-5/static/css/main.1d12b956.chunk.css"
+    "revision": "f264940a3db181c00433",
+    "url": "/anastasia-may-project-5/static/css/main.da3aa39e.chunk.css"
   },
   {
     "revision": "b91df2fb4b29f800b6da",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anastasia-may-project-5/static/js/2.57f5de02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "89b8842f83563f1e7edc",
-    "url": "/anastasia-may-project-5/static/js/main.061a781e.chunk.js"
+    "revision": "f264940a3db181c00433",
+    "url": "/anastasia-may-project-5/static/js/main.26fbd0f4.chunk.js"
   },
   {
     "revision": "7bd11f158783c96feadc",
