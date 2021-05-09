@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73b9ad2878df7f1b339f7d1cf21460e7",
+    "revision": "9c649a3dd88b73af3b6e1f45dbd016b3",
     "url": "/anastasia-may-project-5/index.html"
   },
   {
-    "revision": "98f76e43cbb4b4db7a86",
-    "url": "/anastasia-may-project-5/static/css/main.da3aa39e.chunk.css"
+    "revision": "e72109f7ec89f80e930b",
+    "url": "/anastasia-may-project-5/static/css/main.59d716aa.chunk.css"
   },
   {
-    "revision": "b91df2fb4b29f800b6da",
-    "url": "/anastasia-may-project-5/static/js/2.57f5de02.chunk.js"
+    "revision": "de0c265b14842c098def",
+    "url": "/anastasia-may-project-5/static/js/2.d3629353.chunk.js"
   },
   {
     "revision": "859316db42d1fd6087a644dd7613f095",
-    "url": "/anastasia-may-project-5/static/js/2.57f5de02.chunk.js.LICENSE.txt"
+    "url": "/anastasia-may-project-5/static/js/2.d3629353.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98f76e43cbb4b4db7a86",
-    "url": "/anastasia-may-project-5/static/js/main.f62272e0.chunk.js"
+    "revision": "e72109f7ec89f80e930b",
+    "url": "/anastasia-may-project-5/static/js/main.ed0071d4.chunk.js"
   },
   {
     "revision": "7bd11f158783c96feadc",
