@@ -29,7 +29,7 @@ function Footer() {
 								<i class="fas fa-window-close" />
 								<span className="visuallyhidden">Close Dialog</span>
 							</button>
-							<img src={bikeRackDrawing} alt="Kensington Bike Rack Title Image" className="title-photo" />
+							<img src={bikeRackDrawing} alt="Kensington Bike Rack Title" className="title-photo" />
 							<div className="intro">
 								<p>
 									Kensington Market is a multicultural destination in Toronto to walk around and explore. Join me on a
@@ -50,7 +50,7 @@ function Footer() {
 				<i className="far fa-copyright">
 					<span className="visuallyhidden">Copyright Symbol</span>
 				</i>{' '}
-				2020{' '}
+				2021{' '}
 				<a href="https://www.anastasiamay.com/" title="Link to Anastasia's Developer Website">
 					Anastasia May
 				</a>{' '}
