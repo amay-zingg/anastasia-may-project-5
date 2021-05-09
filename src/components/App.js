@@ -16,6 +16,7 @@ class App extends Component {
 						<Switch>
 							<Route path="/" exact component={MapContainer} />
 							<Route path="/slideshow" component={Slideshow} />
+							<MapContainer />
 						</Switch>
 					</main>
 					<Footer />

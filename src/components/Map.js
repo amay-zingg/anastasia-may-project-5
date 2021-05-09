@@ -5,6 +5,10 @@ import firebase from './Firebase.js';
 import sprayicon from '../icons/spraypaint.png';
 // * * * * MADE WITH FUNCTIONALITY HELP FROM THIS INCREDIBLE PERSON https://twitter.com/danditomaso * * * * //
 
+import { keys } from "../keys.js";
+
+const { REACT_APP_GOOGLE_API } = keys;
+
 const MapWithAMarker = compose(withScriptjs, withGoogleMap)((props) => {
 	return (
 		<GoogleMap zoom={16.5} defaultCenter={{ lat: 43.6545, lng: -79.4015 }}>
@@ -104,8 +108,7 @@ class MapContainer extends Component {
 				selectedMarker={this.state.selectedMarker}
 				markers={this.state.markers}
 				onClick={this.handleClick}
-				googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env
-					.REACT_APP_GOOGLE_API}&v=3.exp&libraries=geometry,drawing,places`}
+				googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${REACT_APP_GOOGLE_API}&v=3.exp&libraries=geometry,drawing,places`}
 				loadingElement={<div style={{ height: `100%` }} />}
 				containerElement={<div style={{ height: `80vh` }} />}
 				mapElement={<div style={{ height: `100%` }} />}

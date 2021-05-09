@@ -10,6 +10,7 @@ footer {
 
 footer p {
 	font-size: clamp(1rem, 2.5vw, 2rem);
+	line-height: clamp(1.5rem, 2.8vw, 3rem);
 }
 
 footer p a,
@@ -29,8 +30,8 @@ footer p a:active,
 	color: $secondary;
 }
 
-.info-slideshow{
-	display:flex;
+.info-slideshow {
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }

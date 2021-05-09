@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Weather from './Weather.js';
 import thunderstorm from '../icons/thunderstorm.png';
@@ -8,8 +8,9 @@ import pcloudy from '../icons/partlyCloudy.png';
 import cloudy from '../icons/cloudy.png';
 import clear from '../icons/sunny.png';
 
-// import Modal from './Modal';
-// import bikeRackDrawing from '../images/KensingtonTitle.png';
+import { keys } from "../keys.js";
+
+const { REACT_APP_WEATHER_API } = keys;
 
 class Header extends Component {
 	constructor() {
@@ -53,8 +54,8 @@ class Header extends Component {
 
 	getWeather = async () => {
 		const callWeather = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${process.env
-				.REACT_APP_WEATHER_API}`
+			`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=${
+				REACT_APP_WEATHER_API}`
 		);
 
 		const response = await callWeather.json();
