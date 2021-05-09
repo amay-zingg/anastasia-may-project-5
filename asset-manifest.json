@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/anastasia-may-project-5/static/css/main.59d716aa.chunk.css",
-    "main.js": "/anastasia-may-project-5/static/js/main.ed0071d4.chunk.js",
-    "main.js.map": "/anastasia-may-project-5/static/js/main.ed0071d4.chunk.js.map",
+    "main.js": "/anastasia-may-project-5/static/js/main.9c17f6e3.chunk.js",
+    "main.js.map": "/anastasia-may-project-5/static/js/main.9c17f6e3.chunk.js.map",
     "runtime-main.js": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js",
     "runtime-main.js.map": "/anastasia-may-project-5/static/js/runtime-main.8f907dda.js.map",
     "static/js/2.d3629353.chunk.js": "/anastasia-may-project-5/static/js/2.d3629353.chunk.js",
     "static/js/2.d3629353.chunk.js.map": "/anastasia-may-project-5/static/js/2.d3629353.chunk.js.map",
     "index.html": "/anastasia-may-project-5/index.html",
-    "precache-manifest.c69530c8aa7f94e295ccda24f1fce4b2.js": "/anastasia-may-project-5/precache-manifest.c69530c8aa7f94e295ccda24f1fce4b2.js",
+    "precache-manifest.743a55eae3f1ea429837c2bf2cb648a9.js": "/anastasia-may-project-5/precache-manifest.743a55eae3f1ea429837c2bf2cb648a9.js",
     "service-worker.js": "/anastasia-may-project-5/service-worker.js",
     "static/css/main.59d716aa.chunk.css.map": "/anastasia-may-project-5/static/css/main.59d716aa.chunk.css.map",
     "static/js/2.d3629353.chunk.js.LICENSE.txt": "/anastasia-may-project-5/static/js/2.d3629353.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.8f907dda.js",
     "static/js/2.d3629353.chunk.js",
     "static/css/main.59d716aa.chunk.css",
-    "static/js/main.ed0071d4.chunk.js"
+    "static/js/main.9c17f6e3.chunk.js"
   ]
 }
